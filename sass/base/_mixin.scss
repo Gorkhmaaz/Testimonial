@@ -1,0 +1,24 @@
+@mixin elementStyles($fontFamily, $fontSize, $fontStyle, $fontWeight, $lineHeight, $color){
+                
+                font-family: $fontFamily;
+                font-size: $fontSize;
+                font-style: $fontStyle;
+                font-weight: $fontWeight;
+                line-height: $lineHeight;
+                color: $color;
+}
+@mixin paragraphStyle{
+                font-family: 'Epilogue', sans-serif;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 30px;
+}
+@mixin flexLayout($flex, $justify, $align, $gap){
+   
+    display: $flex;
+    justify-content: $justify;
+    gap: $gap;
+    align-items: $align;
+   
+}

@@ -1,0 +1,46 @@
+.testimonial{
+    width: 100%;
+    &__layout{
+            width: 100%;  
+            @include flexLayout(flex, space-around, center, 10px);
+            // display: flex;
+            // justify-content: space-around;
+            // align-items: center;
+            // gap: 10px;
+            flex-wrap: wrap;
+        &__elements{
+            width: 31%;
+            padding: 30px 0;
+            @include flexLayout(flex, center, center, 10px);
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            // gap: 10px;
+            flex-direction: column;
+            background-color: #F3F3F3;
+            p{
+                width: 70%;
+                margin: auto;
+                @include paragraphStyle;
+                color: #2D2D2D;
+                margin-bottom: 30px;
+            }
+            &__footer{
+                width: 70%;
+                @include flexLayout(flex,justify-content,flex-start, 15px);
+                // display: flex;
+                // justify-content: flex-start;
+                // align-items: flex-start;
+                // gap: 15px;
+                &__star{
+                    h5{
+                        @include elementStyles('Epilogue', 14px, normal, 600, 30px, #2D2D2D);
+                    }
+                    span{
+                        @include elementStyles('Epilogue', 14px, normal, 400, 27px, #2D2D2D);
+                    }
+                }
+            }
+        }
+    }
+}
